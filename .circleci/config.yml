@@ -16,6 +16,6 @@ jobs:
           - run:
               name: "deploy ytoku_net"
               branch: master
-              commands:
+              command:
                 - aws s3 sync _site s3://ytoku.net/ --delete
 
