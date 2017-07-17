@@ -11,8 +11,11 @@ jobs:
          post:
            - aws configure set region ap-northeast-1
 
-        deployment:
-          production: # just a label; label names are completely up to you
-          branch: master
-          commands:
-            - aws s3 sync _site s3://ytoku.net/ --delete
+        steps:
+          - checkout
+          - run:
+              name: "deploy ytoku_net"
+              branch: master
+              commands:
+                - aws s3 sync _site s3://ytoku.net/ --delete
+
