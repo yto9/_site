@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://ytoku.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ytoku.net/" rel="alternate" type="text/html" /><updated>2017-07-28T05:07:25+00:00</updated><id>http://ytoku.net/</id><title type="html">enhance my world</title><subtitle>write tips help be clear</subtitle><author><name>yto9</name></author><entry><title type="html">CTMCPに取り組む 00</title><link href="http://ytoku.net/technology/ctmcp-study-log-00/" rel="alternate" type="text/html" title="CTMCPに取り組む 00" /><published>2017-07-28T00:00:00+00:00</published><updated>2017-07-28T00:00:00+00:00</updated><id>http://ytoku.net/technology/ctmcp-study-log-00</id><content type="html" xml:base="http://ytoku.net/technology/ctmcp-study-log-00/">&lt;p&gt;これまでにいくつかのプログラミング言語でプログラミングをしてきた。&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://ytoku.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ytoku.net/" rel="alternate" type="text/html" /><updated>2017-07-28T05:49:22+00:00</updated><id>http://ytoku.net/</id><title type="html">enhance my world</title><subtitle>write tips help be clear</subtitle><author><name>yto9</name></author><entry><title type="html">CTMCPに取り組む 00</title><link href="http://ytoku.net/technology/ctmcp-study-log-00/" rel="alternate" type="text/html" title="CTMCPに取り組む 00" /><published>2017-07-28T00:00:00+00:00</published><updated>2017-07-28T00:00:00+00:00</updated><id>http://ytoku.net/technology/ctmcp-study-log-00</id><content type="html" xml:base="http://ytoku.net/technology/ctmcp-study-log-00/">&lt;p&gt;これまでにいくつかのプログラミング言語でプログラミングをしてきた。&lt;br /&gt;
 初めてプログラミングを学んだのはC言語を用いてだった。
 C言語は現在ある高級言語の中ではシンプルな部類に入る言語で、言語を構成している概念は少ない方だと思うが、それでも自分にとっては初めての概念ばかりだったのでそれなりに壁にぶつかりつつも色々と知見を得ることができた。&lt;/p&gt;
 
@@ -8,26 +8,26 @@ C言語は現在ある高級言語の中ではシンプルな部類に入る言�
 
 &lt;p&gt;自分は英語を学ぶことが好きである。&lt;br /&gt;
 なぜなら、話者が非常に多く、多くの情報源が英語で記述、もしくは英語に翻訳されアクセス出来る状態になっているからである。
-今後も今現在英語を用いている人々が突然全滅することがない限り、自分が生きている数十年オーダの間は突如世界から失われたりしないと個人的には思っているからだ。&lt;/p&gt;
+今後も今現在英語を用いている人々が突然全滅することがない限り、自分が生きている数十年オーダの間は突如世界から失われたりしないと個人的には思っている。&lt;/p&gt;
 
 &lt;p&gt;しかし、特定のプログラミング言語はどうだろうか？&lt;/p&gt;
 
 &lt;p&gt;ソフトウェアは後方互換性を保ったまま進化をするのが良しとされておりプログラミング言語もその例に漏れてはいないように思う。
-しかし、それはあくまで同一系譜内の話であり、新しい言語が出てくる場合に継がれていくのはその前世代に開発者やユーザに価値を認められた言語の中でさらに真に有用だった核となる機構(+新たな?概念)である。
+しかし、それはあくまで同一系譜内の話であり、新しい言語が出てくる場合に受け継がれていくのはその前世代に開発者やユーザに価値を認められた言語の中でさらに真に有用だった核となる機構(+新たな?概念)である。
 特定の言語の仔細にはどれほどの価値があるのだろうか？&lt;/p&gt;
 
-&lt;p&gt;個人的に持続可能性が高いものが好きである。&lt;br /&gt;
-現在流行っている言語達は非常にハイスペックだ。
+&lt;p&gt;現在流行っている言語達は非常にハイスペックだ。&lt;br /&gt;
 ライブラリの内部実装はバグが起きたり、改良したいと思わない限りユーザはほとんど目を通さないで済む(これ自体は非常にいいこと)。
-しかし、無意識にプログラミングをしていると自分が作ったアプリケーションの大部分がブラックボックス化してしまう。Ruby on rails・CakePHP・Django と言ったweb frameworkなどはその最たる例である。初学者は自分がrubyの標準ライブラリを呼んでいるのかframeworkのコンポーネントを用いているのか、frameworkが提供しているライフサイクルはどうなっているか、ブラウザとは何か等は知らなくても最低限動くものは作れてしまうのである。
+しかし、無意識にプログラミングをしていると自分が作ったアプリケーションの大部分がブラックボックス化してしまう。Ruby on rails・CakePHP・Django と言ったweb frameworkなどはその最たる例である。初学者は自分がrubyの標準ライブラリを呼んでいるのかframeworkのコンポーネントを用いているのか、frameworkが提供しているライフサイクルはどうなっているか、ブラウザとは何か等々は知らなくても最低限動くものは作れてしまうのである。
 もちろん1から10まで把握するのはプログラミングに限らず現代の進んだ科学技術に対しては現実的な話ではない。
-しかしブラックボックスをホワイトボックスとは行かずともグレーボックスぐらいにしたいのである。&lt;/p&gt;
+しかし、ブラックボックスをホワイトボックスとは行かずともせめて箱の中にどういったものが入ってるのかくらいは知りたいのである。
+ハイスペックな言語(+各種ライブラリ、framerwork)が手厚くプログラマをサポートしてくれればくれるほど、無意識に特定のプログラミング言語を扱っているだけではその核を構成している概念の理解に到達しづらくなっている。&lt;/p&gt;
 
 &lt;p&gt;次世代のプログラミング言語に受け継がれる可能性の高い核となる機構、&lt;br /&gt;
 プログラミングにおける持続可能性の高い知識とはなんだろうか？&lt;/p&gt;
 
 &lt;p&gt;ようやく本題に辿り着いた。
-&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0&quot;&gt;プログラミングパラダイム&lt;/a&gt;という概念？について何度か調べようと試みた。
+&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0&quot;&gt;プログラミングパラダイム&lt;/a&gt;という概念？について何度か調べようと試みたことがある。
 おそらくここにこの問の答えがあるように感じていたからだ。
 しかし(自分が理解していないので感覚的にしか言えないが)、各パラダイムは互いに排反なものではなく、各パラダイムの差異について言及されることが多いが、実のところ共通する部分も多く存在していそうであるという印象を受けた。
 また、ある言語があるパラダイムの完全な実装となっていることはほぼ？なさそうである。
