@@ -1,8 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://ytoku.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ytoku.net/" rel="alternate" type="text/html" /><updated>2017-07-20T06:21:17+00:00</updated><id>http://ytoku.net/</id><title type="html">enhance my world</title><subtitle>write tips help be clear</subtitle><author><name>yto9</name></author><entry><title type="html">About this site</title><link href="http://ytoku.net/portfolio/about/" rel="alternate" type="text/html" title="About this site" /><published>2017-07-19T00:00:00+00:00</published><updated>2017-07-19T00:00:00+00:00</updated><id>http://ytoku.net/portfolio/about</id><content type="html" xml:base="http://ytoku.net/portfolio/about/">&lt;h2 id=&quot;purpose&quot;&gt;purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://ytoku.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ytoku.net/" rel="alternate" type="text/html" /><updated>2017-07-28T05:07:25+00:00</updated><id>http://ytoku.net/</id><title type="html">enhance my world</title><subtitle>write tips help be clear</subtitle><author><name>yto9</name></author><entry><title type="html">CTMCPに取り組む 00</title><link href="http://ytoku.net/technology/ctmcp-study-log-00/" rel="alternate" type="text/html" title="CTMCPに取り組む 00" /><published>2017-07-28T00:00:00+00:00</published><updated>2017-07-28T00:00:00+00:00</updated><id>http://ytoku.net/technology/ctmcp-study-log-00</id><content type="html" xml:base="http://ytoku.net/technology/ctmcp-study-log-00/">&lt;p&gt;これまでにいくつかのプログラミング言語でプログラミングをしてきた。&lt;br /&gt;
+初めてプログラミングを学んだのはC言語を用いてだった。
+C言語は現在ある高級言語の中ではシンプルな部類に入る言語で、言語を構成している概念は少ない方だと思うが、それでも自分にとっては初めての概念ばかりだったのでそれなりに壁にぶつかりつつも色々と知見を得ることができた。&lt;/p&gt;
+
+&lt;p&gt;C言語のコンパイラを作る機会があった。&lt;br /&gt;
+既存のCコンパイラ(gcc, clang)には各種性能で敵わず世の中のプログラマは優秀だなと思う一方で、ソフトウェアは結局機械語が走ってるだけなんだなと実感できた。
+しかし、そう思い始めてから特定の言語にのめり込んで標準ライブラリの関数、次々と出てくる3rd partyのライブラリを実装として追っていくこと、つまり特定の言語に詳しくなることに魅力をを感じなくなってきてしまった。&lt;/p&gt;
+
+&lt;p&gt;自分は英語を学ぶことが好きである。&lt;br /&gt;
+なぜなら、話者が非常に多く、多くの情報源が英語で記述、もしくは英語に翻訳されアクセス出来る状態になっているからである。
+今後も今現在英語を用いている人々が突然全滅することがない限り、自分が生きている数十年オーダの間は突如世界から失われたりしないと個人的には思っているからだ。&lt;/p&gt;
+
+&lt;p&gt;しかし、特定のプログラミング言語はどうだろうか？&lt;/p&gt;
+
+&lt;p&gt;ソフトウェアは後方互換性を保ったまま進化をするのが良しとされておりプログラミング言語もその例に漏れてはいないように思う。
+しかし、それはあくまで同一系譜内の話であり、新しい言語が出てくる場合に継がれていくのはその前世代に開発者やユーザに価値を認められた言語の中でさらに真に有用だった核となる機構(+新たな?概念)である。
+特定の言語の仔細にはどれほどの価値があるのだろうか？&lt;/p&gt;
+
+&lt;p&gt;個人的に持続可能性が高いものが好きである。&lt;br /&gt;
+現在流行っている言語達は非常にハイスペックだ。
+ライブラリの内部実装はバグが起きたり、改良したいと思わない限りユーザはほとんど目を通さないで済む(これ自体は非常にいいこと)。
+しかし、無意識にプログラミングをしていると自分が作ったアプリケーションの大部分がブラックボックス化してしまう。Ruby on rails・CakePHP・Django と言ったweb frameworkなどはその最たる例である。初学者は自分がrubyの標準ライブラリを呼んでいるのかframeworkのコンポーネントを用いているのか、frameworkが提供しているライフサイクルはどうなっているか、ブラウザとは何か等は知らなくても最低限動くものは作れてしまうのである。
+もちろん1から10まで把握するのはプログラミングに限らず現代の進んだ科学技術に対しては現実的な話ではない。
+しかしブラックボックスをホワイトボックスとは行かずともグレーボックスぐらいにしたいのである。&lt;/p&gt;
+
+&lt;p&gt;次世代のプログラミング言語に受け継がれる可能性の高い核となる機構、&lt;br /&gt;
+プログラミングにおける持続可能性の高い知識とはなんだろうか？&lt;/p&gt;
+
+&lt;p&gt;ようやく本題に辿り着いた。
+&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0&quot;&gt;プログラミングパラダイム&lt;/a&gt;という概念？について何度か調べようと試みた。
+おそらくここにこの問の答えがあるように感じていたからだ。
+しかし(自分が理解していないので感覚的にしか言えないが)、各パラダイムは互いに排反なものではなく、各パラダイムの差異について言及されることが多いが、実のところ共通する部分も多く存在していそうであるという印象を受けた。
+また、ある言語があるパラダイムの完全な実装となっていることはほぼ？なさそうである。
+特定のプログラミング言語からそれを構成するパラダイムを学ぶのは筋が悪いように感じた。
+実装に伴う制約や歴史的背景などが複雑に絡み合っているのだろう。&lt;/p&gt;
+
+&lt;p&gt;そこで俗にガウディ本と呼ばれているCTMCPを読もうと思ったのである。&lt;/p&gt;
+
+&lt;p&gt;コンピュータプログラミングの概念・技法・モデル&lt;br /&gt;
+(原題: Concepts,Techniques, and Models of Computer Programming)という本である。
+本の情報は自分がまだ読み終ってないので&lt;a href=&quot;https://www.amazon.co.jp/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5-%E6%8A%80%E6%B3%95-%E3%83%A2%E3%83%87%E3%83%AB-Architects-Archive%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%80%E3%83%B3-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-%E3%82%BB%E3%82%A4%E3%83%95-%E3%83%8F%E3%83%AA%E3%83%87%E3%82%A3/dp/4798113468/ref=sr_1_1?ie=UTF8&amp;amp;qid=1501215064&amp;amp;sr=8-1&amp;amp;keywords=%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5&quot;&gt;amazonの概要欄&lt;/a&gt;に譲るが、核言語(Kernel language)というプログラミングパラダイムを構成するプリミティヴに分解して解説、その組み合わせでパラダイムが決定されているという内容のようで、自分が求めていた物に近そうだと思う。
+そこそこの厚さ(1000p弱)の本なのですぐには読み終わらないと思うが、100件以上投稿することはないだろうという甘い見立てで10進数で2桁の連番で知見をまとめていこうと思う。&lt;/p&gt;</content><author><name>yto9</name></author><category term="Books" /><category term="CTMCP" /><category term="Log" /><category term="Diary" /><summary type="html">これまでにいくつかのプログラミング言語でプログラミングをしてきた。 初めてプログラミングを学んだのはC言語を用いてだった。 C言語は現在ある高級言語の中ではシンプルな部類に入る言語で、言語を構成している概念は少ない方だと思うが、それでも自分にとっては初めての概念ばかりだったのでそれなりに壁にぶつかりつつも色々と知見を得ることができた。</summary></entry><entry><title type="html">About this site</title><link href="http://ytoku.net/portfolio/about/" rel="alternate" type="text/html" title="About this site" /><published>2017-07-19T00:00:00+00:00</published><updated>2017-07-19T00:00:00+00:00</updated><id>http://ytoku.net/portfolio/about</id><content type="html" xml:base="http://ytoku.net/portfolio/about/">&lt;h2 id=&quot;purpose&quot;&gt;purpose&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;improve my documentation skill&lt;/li&gt;
   &lt;li&gt;do documentation and publication at the same time&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>yto9</name></author><summary type="html">purpose improve my documentation skill do documentation and publication at the same time</summary></entry><entry><title type="html">influencer marketing</title><link href="http://ytoku.net/thoughts/influencer-marketing/" rel="alternate" type="text/html" title="influencer marketing" /><published>2017-07-13T00:00:00+00:00</published><updated>2017-07-13T00:00:00+00:00</updated><id>http://ytoku.net/thoughts/influencer-marketing</id><content type="html" xml:base="http://ytoku.net/thoughts/influencer-marketing/">&lt;h2 id=&quot;アイドルヲタクから見たインフルエンサーマーケティングに対して思うこと&quot;&gt;アイドルヲタクから見た、インフルエンサーマーケティングに対して思うこと&lt;/h2&gt;
+  &lt;li&gt;lifelog&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;using-services&quot;&gt;using services&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Amazon S3 (static website hosting)&lt;/li&gt;
+  &lt;li&gt;Jekyll&lt;br /&gt;
+      - minimal mistakes&lt;/li&gt;
+  &lt;li&gt;Docker&lt;/li&gt;
+  &lt;li&gt;git&lt;/li&gt;
+  &lt;li&gt;github/CircleCI&lt;/li&gt;
+  &lt;li&gt;Inkscape&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>yto9</name></author><summary type="html">purpose improve my documentation skill do documentation and publication at the same time lifelog</summary></entry><entry><title type="html">influencer marketing</title><link href="http://ytoku.net/thoughts/influencer-marketing/" rel="alternate" type="text/html" title="influencer marketing" /><published>2017-07-13T00:00:00+00:00</published><updated>2017-07-13T00:00:00+00:00</updated><id>http://ytoku.net/thoughts/influencer-marketing</id><content type="html" xml:base="http://ytoku.net/thoughts/influencer-marketing/">&lt;h2 id=&quot;アイドルヲタクから見たインフルエンサーマーケティングに対して思うこと&quot;&gt;アイドルヲタクから見た、インフルエンサーマーケティングに対して思うこと&lt;/h2&gt;
 
 &lt;p&gt;世の中的にはヲタクとカテゴライズされるジャンルに入る自分から見て、ファン心理というものを理解しているなとは思う。&lt;/p&gt;
 
