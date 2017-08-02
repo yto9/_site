@@ -1,46 +1,154 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://ytoku.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ytoku.net/" rel="alternate" type="text/html" /><updated>2017-07-28T06:32:45+00:00</updated><id>http://ytoku.net/</id><title type="html">enhance my world</title><subtitle>write tips help be clear</subtitle><author><name>yto9</name></author><entry><title type="html">CTMCPに取り組む 00</title><link href="http://ytoku.net/technology/ctmcp-study-log-00/" rel="alternate" type="text/html" title="CTMCPに取り組む 00" /><published>2017-07-28T00:00:00+00:00</published><updated>2017-07-28T00:00:00+00:00</updated><id>http://ytoku.net/technology/ctmcp-study-log-00</id><content type="html" xml:base="http://ytoku.net/technology/ctmcp-study-log-00/">&lt;p&gt;これまでにいくつかのプログラミング言語でプログラミングをしてきた。&lt;br /&gt;
-初めてプログラミングを学んだのはC言語を用いてだった。
-C言語は現在ある高級言語の中ではシンプルな部類に入る言語で、言語を構成している概念は少ない方だと思うが、それでも自分にとっては初めての概念ばかりだったのでそれなりに壁にぶつかりつつも色々と知見を得ることができた。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="http://ytoku.net/feed.xml" rel="self" type="application/atom+xml" /><link href="http://ytoku.net/" rel="alternate" type="text/html" /><updated>2017-08-02T13:28:17+00:00</updated><id>http://ytoku.net/</id><title type="html">enhance my world</title><subtitle>write tips help be clear</subtitle><author><name>yto9</name></author><entry><title type="html">『コンピュータプログラミングの概念・技法・モデル』(CTMCP)を読む 01 はじめに，環境構築</title><link href="http://ytoku.net/technology/ctmcp-study-log-01/" rel="alternate" type="text/html" title="『コンピュータプログラミングの概念・技法・モデル』(CTMCP)を読む 01 はじめに，環境構築" /><published>2017-07-29T00:00:00+00:00</published><updated>2017-07-29T00:00:00+00:00</updated><id>http://ytoku.net/technology/ctmcp-study-log-01</id><content type="html" xml:base="http://ytoku.net/technology/ctmcp-study-log-01/">&lt;p&gt;&lt;a href=&quot;../ctmcp-study-log-00&quot;&gt;前回&lt;/a&gt;は自分の目的がメインだったが，今回からは本の内容に入っていく．&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#読んだ範囲&quot; id=&quot;markdown-toc-読んだ範囲&quot;&gt;読んだ範囲&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#感想&quot; id=&quot;markdown-toc-感想&quot;&gt;感想&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#特徴制約&quot; id=&quot;markdown-toc-特徴制約&quot;&gt;特徴・制約&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ozを採用している理由&quot; id=&quot;markdown-toc-ozを採用している理由&quot;&gt;Ozを採用している理由&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#演習環境構築&quot; id=&quot;markdown-toc-演習環境構築&quot;&gt;演習環境構築&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;読んだ範囲&quot;&gt;読んだ範囲&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5%E3%83%BB%E6%8A%80%E6%B3%95%E3%83%BB%E3%83%A2%E3%83%87%E3%83%AB-Architects-Archive%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%80%E3%83%B3%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-%E3%82%BB%E3%82%A4%E3%83%95%E3%83%BB%E3%83%8F%E3%83%AA%E3%83%87%E3%82%A3/dp/4798113468&quot;&gt;『コンピュータプログラミングの概念・技法・モデル』&lt;/a&gt;(p.iii-p.xx)の”はじめに”を読んだ．&lt;br /&gt;
+この本の位置づけ・目的，学問としてのコンピュータプログラミングとその学習法など，著者のプログラミングに対する思想が述べられている．&lt;/p&gt;
 
-&lt;p&gt;C言語のコンパイラを作る機会があった。&lt;br /&gt;
-既存のCコンパイラ(gcc, clang)には各種性能で敵わず世の中のプログラマは優秀だなと思う一方で、ソフトウェアは結局機械語が走ってるだけなんだなと実感できた。
-しかし、そう思い始めてから特定の言語にのめり込んで標準ライブラリの関数、次々と出てくる3rd partyのライブラリを実装として追っていくこと、つまり特定の言語に詳しくなることに魅力をを感じなくなってきてしまった。&lt;/p&gt;
+&lt;h2 id=&quot;感想&quot;&gt;感想&lt;/h2&gt;
+&lt;p&gt;“はじめに”だけで非常に感銘を受けた．&lt;br /&gt;
+著者のプログラミング教育に対する熱意が伺え，興味深い話も多々あった．
+全部を引用するとただの”はじめに”になってしまいそうなので，ここでの引用は最小限に留める．
+公式に公開されているものなのか分からないのでリンクを貼るのは避けるが，英語版のpdfならweb上で見つかる．本を持っていない人は，そこでPrefaceだけ目を通し，気に入ったら書籍を購入すると良いと思う．&lt;/p&gt;
 
-&lt;p&gt;自分は英語を学ぶことが好きである。&lt;br /&gt;
-なぜなら、話者が非常に多く、多くの情報源が英語で記述、もしくは英語に翻訳されアクセス出来る状態になっているからである。
-今後も今現在英語を用いている人々が突然全滅することがない限り、自分が生きている数十年オーダの間は突如世界から失われたりしないと個人的には思っている。&lt;/p&gt;
+&lt;p&gt;“はじめに”を読んで自分が強く感じたのは以下である．&lt;/p&gt;
 
-&lt;p&gt;しかし、特定のプログラミング言語はどうだろうか？&lt;/p&gt;
+&lt;p&gt;プログラミングは，&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;統合的な学問&lt;/li&gt;
+  &lt;li&gt;科学であり技術&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;ソフトウェアは後方互換性を保ったまま進化をするのが良しとされておりプログラミング言語もその例に漏れてはいないように思う。
-しかし、それはあくまで同一系譜内の話であり、新しい言語が出てくる場合に受け継がれていくのはその前世代に開発者やユーザに価値を認められた言語の中でさらに真に有用だった核となる機構(+新たな?概念)である。
-特定の言語の仔細にはどれほどの価値があるのだろうか？&lt;/p&gt;
+&lt;p&gt;である．しかし，大概の場合&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;小手先仕事(単なる技術)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;現在流行っている言語達は非常にハイスペックだ。&lt;br /&gt;
-ライブラリの内部実装はバグが起きたり、改良したいと思わない限りユーザはほとんど目を通さないで済む(これ自体は非常にいいこと)。
-しかし、無意識にプログラミングをしていると自分が作ったアプリケーションの大部分がブラックボックス化してしまう。Ruby on rails・CakePHP・Django と言ったweb frameworkなどはその最たる例である。初学者は自分がrubyの標準ライブラリを呼んでいるのかframeworkのコンポーネントを用いているのか、frameworkが提供しているライフサイクルはどうなっているか、ブラウザとは何か等々は知らなくても最低限動くものは作れてしまうのである。
-もちろん1から10まで把握するのはプログラミングに限らず現代の進んだ科学技術に対しては現実的な話ではない。
-しかし、ブラックボックスをホワイトボックスとは行かずともせめて箱の中にどういったものが入ってるのかくらいは知りたいのである。
-ハイスペックな言語(+各種ライブラリ、framerwork)が手厚くプログラマをサポートしてくれればくれるほど、無意識に特定のプログラミング言語を扱っているだけではその核を構成している概念の理解に到達しづらくなっている。&lt;/p&gt;
+&lt;p&gt;として教えられている．ということだ．
+著者はどちらの側面も否定していない．
+著者は”はじめに”の中で，プログラミング教育に対して以下のように述べている．&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;技術がかけると純粋数学と変わらないことになる．科学が欠けると小手先仕事になる．すなわち，深い理解に欠ける．よって，プログラミングを正しく教えるとは，技術(現在のツール)と科学(基礎的概念)とを共に教えることである．学生がツールを知ることは現在に対する備えであり，概念を知ることは将来の発展に対する備えである．&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;次世代のプログラミング言語に受け継がれる可能性の高い核となる機構、&lt;br /&gt;
-プログラミングにおける持続可能性の高い知識とはなんだろうか？&lt;/p&gt;
+&lt;p&gt;「将来の発展に対する備え」，持続可能性の高そうなものが好きな自分はここを読んで非常に高まった．
+著者が想定している例にもれず，自分は小手先仕事としていくつかの言語からプログラミングを学んできたタイプだが，”はじめに”を読む限り，この本を読み始めるにあたって，いわゆるプログラミング経験は前提としていないようだ．また，初学者がボトムアップで，プログラミングの概念を学習していくことが現実的ではないことにも言及しており，理論理論した構成ではないことが伺えた．&lt;br /&gt;
+主にこのシリーズは自分の学習記録用だが，このシリーズを読んでCTMCPでプログラミングを学習してみようと思う人がいたら嬉しい(コンピュータ・サイエンスに詳しい優秀なプログラマが増え，世の中に本質的な情報が溢れるといいなと常々思っている)．&lt;/p&gt;
 
-&lt;p&gt;ようやく本題に辿り着いた。
-&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0&quot;&gt;プログラミングパラダイム&lt;/a&gt;という概念？について何度か調べようと試みたことがある。
-おそらくここにこの問の答えがあるように感じていたからだ。
-しかし(自分が理解していないので感覚的にしか言えないが)、各パラダイムは互いに排反なものではなく、各パラダイムの差異について言及されることが多いが、実のところ共通する部分も多く存在していそうであるという印象を受けた。
-また、ある言語があるパラダイムの完全な実装となっていることはほぼ？なさそうである。
-特定のプログラミング言語からそれを構成するパラダイムを学ぶのは筋が悪いように感じた。
-実装に伴う制約や歴史的背景などが複雑に絡み合っているのだろう。&lt;/p&gt;
+&lt;h2 id=&quot;特徴制約&quot;&gt;特徴・制約&lt;/h2&gt;
+&lt;p&gt;言語的な制約などに縛られない，体系的なプログラミングについての本であるが，プログラミングの教授法としては計算ベースの方法を採用している．
+そのため利用する言語Ozによる形式化のみは行われる．&lt;/p&gt;
 
-&lt;p&gt;そこで俗にガウディ本と呼ばれているCTMCPを読もうと思ったのである。&lt;/p&gt;
+&lt;h3 id=&quot;ozを採用している理由&quot;&gt;Ozを採用している理由&lt;/h3&gt;
+&lt;p&gt;概念の説明に，本の中で利用する言語にOzを選んだ理由としては以下が挙げられていた．&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;核言語方式に従っている&lt;/li&gt;
+  &lt;li&gt;Mozart Programming Systemが存在している&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.info.ucl.ac.be/~pvr/fdpefinalweb.pdf&quot;&gt;核言語&lt;/a&gt;による計算モデルの理解がこの本の肝であるようだ．
+日本語で核言語(kernel language/core language)についてまとまっている情報源が見当たらなかったので，著者による核言語による教授法についての論文へのリンクを貼っておく．
+本書での勉強を終えたら別途，自分の理解をまとめようと思う．&lt;/p&gt;
+
+&lt;h2 id=&quot;演習環境構築&quot;&gt;演習環境構築&lt;/h2&gt;
+&lt;p&gt;この本はMozart 1系(1.1.0による実行結果などが添付されている)が想定されて書かれている．&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;この本では，第13章(一般的計算モデル)と第12章(計算空間)によって与えられる意味を持つ，理想的な実装を前提としている．この理想的な実装とMozartシステムとの間には若干の差異がある．そのことについてはこの本のウェブサイトに説明がある．&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;とあり，そのウェブサイトは&lt;a href=&quot;https://www.info.ucl.ac.be/~pvr/book.html&quot;&gt;ここ&lt;/a&gt;である．
+公式サイトはあまり見やすいものではなかったので，色々と調べていると演習環境について著者が答えているメーリスの&lt;a href=&quot;https://groups.google.com/forum/#!topic/mozart-users/AilSIdmcB_k&quot;&gt;スレッド&lt;/a&gt;を見つけた．&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/peter.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本中の全ての演習が実行できるようにしたかったのでこの指示に従い，Mozart1.4.0の環境を構築することにした．
+自分はUbuntu16.04(x86_64)を使っており公式のMozartのパッケージは&lt;a href=&quot;https://help.ubuntu.com/community/Mozart&quot;&gt;色々問題がありそうな雰囲気&lt;/a&gt;だったので，Ubuntu16.04(x64)の仮想環境を用意した．
+インストールは，&lt;a href=&quot;https://github.com/mozart/mozart&quot;&gt;Githubのリポジトリ&lt;/a&gt;のREADMEに従った．
+READMEでは，&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Arch linux&lt;/li&gt;
+  &lt;li&gt;Ubuntu/Debian(x64)&lt;/li&gt;
+  &lt;li&gt;OS X&lt;/li&gt;
+  &lt;li&gt;OS X(x86_64)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;が想定されているので自分の環境にあったインストール手順を踏む．
+自分の場合はUbuntu(x64)なので以下．&amp;lt;username&amp;gt; は適宜自分のpcのlogin user名に変換．&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install emacs flex bison tk-dev build-essential g++-multilib zlib1g-dev:i386 libgmp-dev:i386
+$ mkdir -p ~/dev
+$ cd ~/dev
+$ git clone git://github.com/mozart/mozart.git
+$ cd ~/dev/mozart
+$ ./configure --prefix=/home/&amp;lt;username&amp;gt;/oz --disable-contrib-gdbm --enable-modules-static
+$ make &amp;amp;&amp;amp; make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;~/.profileにozのバイナリへのパスを追加．&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &quot;export OZHOME=/home/&amp;lt;username&amp;gt;/oz&quot; &amp;gt;&amp;gt; ~/.profile
+$ echo &quot;export PATH=$PATH:$OZHOME/bin&quot; &amp;gt;&amp;gt; ~/.profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;プロファイルの内容を読みこませるために再起動すると無事ozとMozartの起動が確認できた．
+&lt;img src=&quot;/assets/img/oz_env.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>yto9</name></author><category term="Books" /><category term="CTMCP" /><category term="Log" /><summary type="html">前回は自分の目的がメインだったが，今回からは本の内容に入っていく． 読んだ範囲 読んだ範囲 『コンピュータプログラミングの概念・技法・モデル』(p.iii-p.xx)の”はじめに”を読んだ． この本の位置づけ・目的，学問としてのコンピュータプログラミングとその学習法など，著者のプログラミングに対する思想が述べられている．</summary></entry><entry><title type="html">『コンピュータプログラミングの概念・技法・モデル』(CTMCP)を読む 00 モチベーション，経緯</title><link href="http://ytoku.net/technology/ctmcp-study-log-00/" rel="alternate" type="text/html" title="『コンピュータプログラミングの概念・技法・モデル』(CTMCP)を読む 00 モチベーション，経緯" /><published>2017-07-28T00:00:00+00:00</published><updated>2017-07-28T00:00:00+00:00</updated><id>http://ytoku.net/technology/ctmcp-study-log-00</id><content type="html" xml:base="http://ytoku.net/technology/ctmcp-study-log-00/">&lt;p&gt;これまでにいくつかのプログラミング言語でプログラミングをしてきた．&lt;br /&gt;
+初めてプログラミングを学んだのはC言語を用いてだった．
+C言語は現在ある高級言語の中ではシンプルな部類に入る言語である．
+言語を構成している概念は少ない方だとは思うが，それでもプログラミングが初めての自分にとっては初めての概念ばかりだった．
+それなりに壁にぶつかりつつも色々とプログラミングについての知見を得ることができていると思っていた．&lt;/p&gt;
+
+&lt;p&gt;その後，web開発などで様々な言語に触れた後に，C言語のコンパイラを作る機会があった．&lt;br /&gt;
+既存のCコンパイラ(gcc, clang)には各種性能で敵わなかった．
+世の中のプログラマは優秀だなと思う一方で，ソフトウェアは結局機械語が走ってるだけなんだなと実感できた．
+しかし，そう思い始めてから特定の言語にのめり込んで標準ライブラリや次々と出てくる3rd partyのライブラリのサポートする関数の種類や使い方を知ること，つまり特定の言語に詳しくなることに魅力をを感じなくなってきてしまった．&lt;/p&gt;
+
+&lt;p&gt;自分は英語を学ぶことが好きである．&lt;br /&gt;
+なぜなら，話者が非常に多く，多くの情報源が英語で記述，もしくは英語に翻訳されアクセス出来る状態になっているからである．
+今後も，今現在英語を用いている人々が突然全滅することがない限り，自分が生きている数十年オーダの間は突如世界から失われたりしない言語だと個人的には思っている．&lt;/p&gt;
+
+&lt;p&gt;しかし，特定のプログラミング言語はどうだろうか．&lt;/p&gt;
+
+&lt;p&gt;ソフトウェアは後方互換性を保ったまま進化をするのが良しとされている．プログラミング言語もその例に漏れてはいないように思う．
+しかし，それはあくまで同一系譜内の話である．
+新しい言語が出てくる場合に受け継がれていくものは，その前世代に開発者やユーザに価値を認められた言語の中で，真に有用だった核となる機構(+新たな?概念)だけである．
+特定の言語の仔細(多くの場合には本質的ではないが，その特定の言語による制約が故に煩雑になっている部分)にはどれほどの価値があるのだろうか．&lt;/p&gt;
+
+&lt;p&gt;現在流行っている言語達は非常にハイスペックである．&lt;br /&gt;
+ライブラリの内部実装はバグが起きたり，改良したいと思わない限り，多くのユーザはほとんど目を通さないで済む(これ自体は非常にいいことである)．
+しかし，無意識にプログラミングをしていると自分が作ったアプリケーションの大部分がブラックボックス化してしまう．
+Ruby on rails・CakePHP・Django のようなweb frameworkなどはその最たる例である．
+初学者は自分がrubyの標準ライブラリを呼んでいるのかframeworkのコンポーネントを用いているのか，frameworkが提供しているライフサイクルはどうなっているか，ブラウザとは何か等々は知らなくても最低限動くものは作れてしまうのである．
+もちろん，全てにおいて1から10まで把握すればいいというものではない．プログラミングに限らず現代の進んだ科学技術に対しては全てを把握することは，現実的な話ではない．
+しかし，自分は自分の使うものは，ホワイトボックスとは行かずともせめて箱の中にどういったものが入ってるのかくらいは知っておきたいのである．
+ハイスペックな言語(+各種ライブラリ，framerwork)が手厚くプログラマをサポートしてくれればくれるほど，無意識に特定のプログラミング言語を扱っているだけではその核を構成している概念の理解に到達しづらくなっていると感じる．&lt;/p&gt;
+
+&lt;p&gt;次世代のプログラミング言語にも受け継がれる可能性の高い核となる機構，&lt;br /&gt;
+プログラミングにおける持続可能性の高い知識とはなんだろうか．&lt;/p&gt;
+
+&lt;p&gt;ようやく本題に辿り着いた．
+&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0&quot;&gt;プログラミングパラダイム&lt;/a&gt;という概念？について何度か調べようと試みたことがある．
+おそらくここにこの問の答えがあるように思っていたからだ．
+しかし(自分が理解していないので感覚的にしか言えないが)，各パラダイムは互いに排反なものではなく，各パラダイムの差異について言及されることが多いが，実のところ共通する部分も多く存在していそうであるという印象を受けた．
+また，ある言語があるパラダイムの完全な実装となっていることはほぼなさそう？である．
+特定のプログラミング言語からそれを構成するパラダイムを学ぶのは筋が悪いように感じた．
+実装に伴う制約や歴史的背景などが複雑に絡み合っているのだろう．&lt;/p&gt;
+
+&lt;p&gt;そこで俗にガウディ本と呼ばれている以下の本を読もうと思ったのである．&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/ctmcp.jpg&quot; alt=&quot;&quot; /&gt;
-コンピュータプログラミングの概念・技法・モデル&lt;br /&gt;
-(原題: Concepts,Techniques, and Models of Computer Programming)という本である。
-本の情報は自分がまだ読み終ってないので&lt;a href=&quot;https://www.amazon.co.jp/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5-%E6%8A%80%E6%B3%95-%E3%83%A2%E3%83%87%E3%83%AB-Architects-Archive%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%80%E3%83%B3-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-%E3%82%BB%E3%82%A4%E3%83%95-%E3%83%8F%E3%83%AA%E3%83%87%E3%82%A3/dp/4798113468/ref=sr_1_1?ie=UTF8&amp;amp;qid=1501215064&amp;amp;sr=8-1&amp;amp;keywords=%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5&quot;&gt;amazonの概要欄&lt;/a&gt;に譲るが、核言語(Kernel language)というプログラミングパラダイムを構成するプリミティヴに分解して解説、その組み合わせでパラダイムが決定されているという内容のようで、自分が求めていた物に近そうだと思う。
-そこそこの厚さ(1000p弱)の本なのですぐには読み終わらないと思うが、100件以上投稿することはないだろうという甘い見立てで10進数で2桁の連番で知見をまとめていこうと思う。&lt;/p&gt;</content><author><name>yto9</name></author><category term="Books" /><category term="CTMCP" /><category term="Log" /><category term="Diary" /><summary type="html">これまでにいくつかのプログラミング言語でプログラミングをしてきた。 初めてプログラミングを学んだのはC言語を用いてだった。 C言語は現在ある高級言語の中ではシンプルな部類に入る言語で、言語を構成している概念は少ない方だと思うが、それでも自分にとっては初めての概念ばかりだったのでそれなりに壁にぶつかりつつも色々と知見を得ることができた。</summary></entry><entry><title type="html">About this site</title><link href="http://ytoku.net/portfolio/about/" rel="alternate" type="text/html" title="About this site" /><published>2017-07-19T00:00:00+00:00</published><updated>2017-07-19T00:00:00+00:00</updated><id>http://ytoku.net/portfolio/about</id><content type="html" xml:base="http://ytoku.net/portfolio/about/">&lt;h2 id=&quot;purpose&quot;&gt;purpose&lt;/h2&gt;
+&lt;a href=&quot;https://www.amazon.co.jp/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5-%E6%8A%80%E6%B3%95-%E3%83%A2%E3%83%87%E3%83%AB-Architects-Archive%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%80%E3%83%B3-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-%E3%82%BB%E3%82%A4%E3%83%95-%E3%83%8F%E3%83%AA%E3%83%87%E3%82%A3/dp/4798113468/ref=sr_1_1?ie=UTF8&amp;amp;qid=1501215064&amp;amp;sr=8-1&amp;amp;keywords=%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5&quot;&gt;『コンピュータプログラミングの概念・技法・モデル』&lt;/a&gt; 
+(原題: 『Concepts,Techniques, and Models of Computer Programming』，CTMCPと略記される)という本である．
+本の情報は自分がまだ読み終ってないので&lt;a href=&quot;https://www.amazon.co.jp/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5-%E6%8A%80%E6%B3%95-%E3%83%A2%E3%83%87%E3%83%AB-Architects-Archive%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%80%E3%83%B3-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-%E3%82%BB%E3%82%A4%E3%83%95-%E3%83%8F%E3%83%AA%E3%83%87%E3%82%A3/dp/4798113468/ref=sr_1_1?ie=UTF8&amp;amp;qid=1501215064&amp;amp;sr=8-1&amp;amp;keywords=%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E6%A6%82%E5%BF%B5&quot;&gt;amazonの概要欄&lt;/a&gt;に譲る．
+レビュー等を見ると，核言語(Kernel language)というプログラミングパラダイムを構成するプリミティヴに分解してそれぞれのプリミティヴを解説，その組み合わせでパラダイムが決定されているといった内容のようで，自分が求めていた物に近そうだと思う．
+そこそこの厚さ(1000p弱)の本なのですぐには読み終わらないと思うが，100件以上投稿することはないだろうという甘い見立てで10進数で2桁の連番で感想・知見をまとめていこうと思う．&lt;/p&gt;</content><author><name>yto9</name></author><category term="Books" /><category term="CTMCP" /><category term="Log" /><category term="Diary" /><summary type="html">これまでにいくつかのプログラミング言語でプログラミングをしてきた． 初めてプログラミングを学んだのはC言語を用いてだった． C言語は現在ある高級言語の中ではシンプルな部類に入る言語である． 言語を構成している概念は少ない方だとは思うが，それでもプログラミングが初めての自分にとっては初めての概念ばかりだった． それなりに壁にぶつかりつつも色々とプログラミングについての知見を得ることができていると思っていた．</summary></entry><entry><title type="html">About this site</title><link href="http://ytoku.net/portfolio/about/" rel="alternate" type="text/html" title="About this site" /><published>2017-07-19T00:00:00+00:00</published><updated>2017-07-19T00:00:00+00:00</updated><id>http://ytoku.net/portfolio/about</id><content type="html" xml:base="http://ytoku.net/portfolio/about/">&lt;h2 id=&quot;purpose&quot;&gt;purpose&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;improve my documentation skill&lt;/li&gt;
   &lt;li&gt;do documentation and publication at the same time&lt;/li&gt;
@@ -56,21 +164,4 @@ C言語は現在ある高級言語の中ではシンプルな部類に入る言�
   &lt;li&gt;git&lt;/li&gt;
   &lt;li&gt;github/CircleCI&lt;/li&gt;
   &lt;li&gt;Inkscape&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>yto9</name></author><summary type="html">purpose improve my documentation skill do documentation and publication at the same time lifelog</summary></entry><entry><title type="html">influencer marketing</title><link href="http://ytoku.net/thoughts/influencer-marketing/" rel="alternate" type="text/html" title="influencer marketing" /><published>2017-07-13T00:00:00+00:00</published><updated>2017-07-13T00:00:00+00:00</updated><id>http://ytoku.net/thoughts/influencer-marketing</id><content type="html" xml:base="http://ytoku.net/thoughts/influencer-marketing/">&lt;h2 id=&quot;アイドルヲタクから見たインフルエンサーマーケティングに対して思うこと&quot;&gt;アイドルヲタクから見た、インフルエンサーマーケティングに対して思うこと&lt;/h2&gt;
-
-&lt;p&gt;世の中的にはヲタクとカテゴライズされるジャンルに入る自分から見て、ファン心理というものを理解しているなとは思う。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ex.
-推し(好きなメンバー)が関わっていれば、アイドルヲタクは内容も世間での評価も鑑みずとりあえず買う。人によっては大量に買う。&lt;br /&gt;
-それは例えば、&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;好きな映画監督の新作は酷評されていても必ず映画館で見る&lt;/li&gt;
-    &lt;li&gt;好きな作家の新作はハードカバーしかないときにでも買って読む&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;と同様の行為だと思ってもらえるとアイドルヲタク以外の方でもある程度理解していただける心理だと思う。(勿論ドルヲタのそれが過度と感じられることが多いことも否定はしない。)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;でも、ファンになってくれていれば購買対象コンテンツ自体に魅力がなくても、インフルエンサーの関連物の購買行動を誘発できると感じたのならば、提供者側(server-side)の真摯なあり方とは、プロダクト、サービス、製作者、会社自体のファンになってもらうことに尽力することだと思う。
-そのための手段として、本質的に優れたコンテンツをより多くの人に知ってもらうためにインフルエンサーを宣伝に起用している会社ももちろんたくさんある。素晴らしいと思う。ただ、炎上商法をする広告会社だったり、芸能人のゴシップばかり流れるニュースメディアなどを見ていると、如何に楽して瞬間的な売上を増やすかにしか興味ないのかなと悲しい気持ちになる。&lt;/p&gt;</content><author><name>yto9</name></author><summary type="html">アイドルヲタクから見た、インフルエンサーマーケティングに対して思うこと</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>yto9</name></author><summary type="html">purpose improve my documentation skill do documentation and publication at the same time lifelog</summary></entry></feed>
